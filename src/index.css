@@ -1,13 +1,51 @@
+@font-face {
+  font-family: "BigCaslonMedium";
+  src: url(./assets/fonts/BigCaslon-Medium.ttf) format("truetype");
+  font-style: "medium";
+  font-display: "swap";
+}
+
+@font-face {
+  font-family: "BrownStdBold";
+  src: url(./assets/fonts/BrownStd-Bold.ttf) format("truetype");
+  font-display: "swap";
+}
+@font-face {
+  font-family: "BrownStdRegular";
+  src: url(./assets/fonts/BrownStd-Regular.ttf) format("truetype");
+  font-style: "regular";
+  font-display: "swap";
+}
+@font-face {
+  font-family: "BrownStdLight";
+  src: url(./assets/fonts/BrownStd-Light.ttf) format("truetype");
+  font-style: "light";
+  font-display: "swap";
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  background-color: white;
+  font-family: sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+.search_active {
+  width: 100%;
+  transition: transform 0.5s linear;
+  height: 75% !important;
+}
+
+.search_active .MuiInputBase-root {
+  height: 75% !important;
+}
+.search_inactive {
+  transition: transform 0.5s linear;
+  width: 10%;
+}
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
